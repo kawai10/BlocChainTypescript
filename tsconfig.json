@@ -1,7 +1,13 @@
 {
+  // include : js로 컴파일할 대상 폴더 및 파일들을 명시
   "include": ["src"],
   "compilerOptions": {
+    // 컴파일한 js 파일을 어디에 위치시킬것인지 명시
     "outDir": "build",
-    "target": "ES6"
+    // 어떤 버전의 js로 컴파일을 할것인지 명시
+    "target": "ES6",
+    "lib": ["ES6"],
+    "strict": true,
+    "allowJs": true
   }
 }
